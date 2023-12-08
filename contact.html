@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/contact_style.css" />
+    <script defer src="./js/contact_script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1>LC</h1>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+            <li id="bag">
+              <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="up">
+      <a href="#contact">
+        <i class="fa-regular fa-circle-up"></i>
+      </a>
+    </div>
+
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="title">
+          <p>Need Help ?<span> Contact Us</span></p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d6900.118360061493!2d31.720482!3d30.149724!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1699447705443!5m2!1sen!2seg"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="details">
+          <div class="address">
+            <div class="icon"><i class="fa-regular fa-map"></i></div>
+            <div class="content">
+              <h3>Our Address</h3>
+              <p>New Cairo Badr City</p>
+            </div>
+          </div>
+
+          <div class="email">
+            <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="content">
+              <h3>Email Us</h3>
+              <p>contact&#64;example.com</p>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="icon">
+              <i class="fa-regular fa-comment-dots"></i>
+            </div>
+            <div class="content">
+              <h3>Call Us</h3>
+              <p>010101010010</p>
+            </div>
+          </div>
+          <div class="opening-hours">
+            <div class="icon">
+              <i class="fa-regular fa-share-from-square"></i>
+            </div>
+            <div class="content">
+              <h3>Opening Hours</h3>
+              <p>
+                <span>Mon-Sat :</span> 11AM - 23PM <span> Sunday :</span> Closed
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form action="#">
+          <div class="inputs">
+            <input id="name" type="text" name="name" placeholder="Your Name" />
+            <input
+              id="email"
+              type="text"
+              name="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="inputs">
+            <p id="pName"></p>
+            <p id="pEmail"></p>
+          </div>
+          <input
+            id="password"
+            type="text"
+            name="password"
+            placeholder="Enter Your password"
+          />
+          <p id="pPass"></p>
+          <input
+            name="country"
+            id="country"
+            list="countries"
+            placeholder="Select Your Country"
+          />
+          <datalist id="countries">
+            <option value="Palestine"></option>
+            <option value="Egypt"></option>
+            <option value="Saudi Arabia"></option>
+          </datalist>
+          <p id="pCountry"></p>
+          <textarea name="message" placeholder="Enter Message"></textarea>
+          <button type="submit" onclick="check()">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="about">
+          <div class="logo">
+            <h2>LCWAIKIKI</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            odit amet quisquam dolorum, perferendis recusandae.
+          </p>
+        </div>
+
+        <div class="social">
+          <h3>Social Media</h3>
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>About US</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Egypt Cairo Badr City</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span> contact&#64;example.com </span>
+            </li>
+            <li><i class="fa-solid fa-phone"></i> <span>010101010010</span></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

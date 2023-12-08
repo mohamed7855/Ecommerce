@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* generic */
+.container {
+    width: 85%;
+    margin: 0px auto;
+}
+/* hidden */
+.hidden{
+    display: none;
+}
+
+
+/* ========== Start Navbar ========== */
+nav{
+    background-color: #e3e6fe;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding-block: 25px;
+}
+nav .container{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #535252;
+}
+nav h1::after{
+    content:".Waikiki" ;
+    color: #193DB0;
+}
+nav .links ul{
+    display: flex;
+    gap: 20px;
+}
+nav .links li{
+    color: #193DB0;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #535252;
+    transition: 0.2s ease;
+}
+nav li i{
+    font-size: 30px;
+    color: #193DB0 ;
+}
+nav li a:hover{
+    color: #193DB0;
+}
+nav li a{
+    position: relative;
+}
+nav li a.active::after{
+    width: 100%;
+}
+nav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #193DB0;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    transition: .3s;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+.up a{
+    position: fixed;
+    right: 20px;
+    top: 80vh;
+}
+.up a i{
+    font-size: 50px;
+    color: #193DB0;
+}
+/* ========== End Navbar ========== */
+
+
+/* ========== Start OurServices ========== */
+.our-services {
+    background-color: #F5F5F5;
+    padding-block: 90px;
+}
+.our-services h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-block: 25px;
+    color: #535252;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.service {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    transition: .8s;
+}
+.service i {
+    color: #4869d5;
+    transition: .5s;
+    font-size: 36px;
+}
+.service h3 {
+    font-size: 24px;
+    text-align: center;
+    padding-block: 25px;
+    color: #193DB0;
+}
+.service p {
+    font-size: 18px;
+    color: #535252;
+}
+.service:hover {
+    background-color: #fff;
+}
+.service:hover i {
+    color: #193DB0;
+    transform: scale(1.2);
+}
+/* ========== End OurServices ========== */
+
+
+/* ========== Start Footer ========== */
+footer{
+    text-align: start;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px -1px 5px #0007;
+    background-color: #84868e;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-block: 30px;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+footer .container > div{
+    width: calc(calc(100% - 40px) / 3); 
+}
+footer .about .logo h2{
+    color: #193DB0;
+    font-size: 50px;
+}
+footer .about .logo h2::after{
+    content: ".";
+    color: #fff;
+}
+footer .about p{
+    margin-block: 10px;
+    line-height: 20px;
+    font-weight: 400;
+}
+footer .social h3{
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 5px solid #ddd6;
+    margin-bottom: 20px;
+    padding-block: 10px;
+}
+footer .social ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+footer .social ul li a i{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    transition: .5s;
+}
+footer .social ul li a i:hover{
+    color: #193DB0;
+}
+footer .container{
+    text-align: center;
+}
+footer .container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .container .contact h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-block: 10px;
+    border-bottom: 5px solid #ddd6;
+}
+footer .container .contact ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+footer .container .contact ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+footer .container .contact ul li i{
+    margin-right: 20px;
+    color: #193DB0;
+    font-size: 22px;
+    cursor: pointer;
+}
+footer .container .contact ul li span{
+    font-weight: 400;
+}
+/* ========== End Footer ========== */

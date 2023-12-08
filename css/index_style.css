@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/* generic */
+.container {
+    width: 85%;
+    margin: 0px auto;
+}
+/* hidden */
+.hidden{
+    display: none;
+}
+
+
+/* ========== Start Navbar ========== */
+nav{
+    background-color: #e3e6fe;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding-block: 25px;
+}
+nav .container{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #535252;
+}
+nav h1::after{
+    content:".Waikiki" ;
+    color: #193DB0;
+}
+nav .links ul{
+    display: flex;
+    gap: 20px;
+}
+nav .links li{
+    color: #193DB0;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #535252;
+    transition: 0.2s ease;
+}
+nav li i{
+    font-size: 30px;
+    color: #193DB0 ;
+}
+nav li a:hover{
+    color: #193DB0;
+}
+nav li a{
+    position: relative;
+}
+nav li a.active::after{
+    width: 100%;
+}
+nav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #193DB0;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    transition: .3s;
+}
+nav li a:hover::after{
+    width: 100%;
+}
+/* ========== End Navbar ========== */
+
+
+/* ========== Start Home ========== */
+#home{
+    display: flex;
+    padding-top: 50px;
+    background-color: gray;
+    height: 100vh;
+    background-image: url(../imgs/hero.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top -10% right 0;
+}
+#home .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 5px;
+    color: #193DB0;
+}
+#home h4{
+    color: #193DB0;
+}
+#home h2{
+    color: #535252;
+}
+#home h1{
+    color: #535252;
+}
+#home p{
+    font-size: 25px;
+}
+#home button{
+    background-color: rgb(169, 156, 183);
+    border: 0;
+    margin-top: 20px;
+    padding: 15px 80px;
+    background-image: url(../imgs/button.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: transparent;
+    color: #535252;     
+    font-weight: 700;
+    font-size: 25px;
+}
+.up a{
+    position: fixed;
+    right: 20px;
+    top: 80vh;
+}
+.up a i{
+    font-size: 50px;
+    color: #193DB0;
+}
+/* ========== End Home ========== */
+
+
+/* ========== Start Slider ========== */
+#slider{
+    padding-block: 80px;
+    /* background-color: #e3e6fe; */
+    margin: auto;
+    text-align: center;
+}
+#slider h2{
+    font-size: 50px;
+    padding-bottom: 10px;
+    color: #535252;
+}
+#slider .slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+#slider .slide{
+    width: 100%;
+
+}
+#slider .slide .slide-content{
+    position: relative;
+    width: 100%;
+}
+#slider .slide .slide-content img{
+    width: 50%;
+    border-radius: 10px;
+}
+#slider .slide .slide-content .arrow{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    border: 30px solid blue;
+    border-radius: 5px;
+    border-width: 0 5px 5px 0;
+}
+#slider .slide .slide-content .left{
+    left: 18%;
+    rotate: 135deg;
+}
+#slider .slide .slide-content .right{
+    right: 18%;
+    rotate: -45deg;
+}
+/* ========== End Slider ========== */
+
+/* ========== Start Products ========== */
+#products{
+}
+#products h2{
+    font-size: 50px;
+    text-align: center;
+    padding-block: 25px;
+    color: #535252;
+}
+#products .categories .btns{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+#products .categories .btns button{
+    color: #fff;
+    font-size: 16px;
+    background-color: #193DB0;
+    padding-block: 15px;
+    border-radius: 50px;
+    border: none;
+    width: calc(100%/5);
+    transition: .2s;
+}
+#products .categories .btns .active{
+    border-radius: 80px 5px 80px 5px;
+    background-color: #686767;
+}
+#products .categories .btns button:hover{
+    background-color: blue;
+    filter: drop-shadow(4px 4px 6px rgba(141, 126, 126, 0.667));
+}
+#products .categories .products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start; 
+    align-content: center; 
+    padding-block: 25px;
+    color: #fff;
+}
+#products .categories .products .product{
+    background-color: rgb(137, 137, 164);
+    width: calc(calc(100%/3) - 20px);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    filter: drop-shadow(4px 4px 6px rgba(141, 126, 126, 0.667));
+    margin-bottom: 20px;
+}
+#products .categories .products .product img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+#products .categories .products .product a{
+    position: absolute;
+    bottom: 2.5%;
+    right: 2.5%;
+    background-color: #193DB0;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    transition: .5s;
+}
+#products .categories .products .product a i{
+     color: #fff;
+     transition: .5s;
+}
+#products .categories .products .product a:hover i{
+    color: #193DB0;
+}
+#products .categories .products .product a:hover{
+    background-color: #fff;
+}
+
+/* ========== End Products ========== */
+
+
+/* ========== Start Footer ========== */
+footer{
+    text-align: start;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px -1px 5px #0007;
+    background-color: #84868e;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-block: 30px;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+footer .container > div{
+    width: calc(calc(100% - 40px) / 3); 
+}
+footer .about .logo h2{
+    color: #193DB0;
+    font-size: 50px;
+}
+footer .about .logo h2::after{
+    content: ".";
+    color: #fff;
+}
+footer .about p{
+    margin-block: 10px;
+    line-height: 20px;
+    font-weight: 400;
+}
+footer .social h3{
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 5px solid #ddd6;
+    margin-bottom: 20px;
+    padding-block: 10px;
+}
+footer .social ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+footer .social ul li a i{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    transition: .5s;
+}
+footer .social ul li a i:hover{
+    color: #193DB0;
+}
+footer .container{
+    text-align: center;
+}
+footer .container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .container .contact h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-block: 10px;
+    border-bottom: 5px solid #ddd6;
+}
+footer .container .contact ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+footer .container .contact ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+footer .container .contact ul li i{
+    margin-right: 20px;
+    color: #193DB0;
+    font-size: 22px;
+    cursor: pointer;
+}
+footer .container .contact ul li span{
+    font-weight: 400;
+}
+/* ========== End Footer ========== */

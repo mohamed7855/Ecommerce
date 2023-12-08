@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+    <script defer src="./js/index_script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h1>LC</h1>
+        <div class="links">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li id="bag">
+              <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start Home -->
+    <section id="home">
+      <div class="container">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>save more with coupons & up to 70% off!</p>
+        <a href="#products"><button>Shop Now</button></a>
+      </div>
+    </section>
+    <!-- End Home -->
+
+    <div class="up">
+      <a href="#home">
+        <i class="fa-regular fa-circle-up"></i>
+      </a>
+    </div>
+    <!-- Start Slider -->
+    <section id="slider">
+      <div class="container">
+        <h2>New Arrivals</h2>
+
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-content">
+              <div class="arrow left"></div>
+              <div class="arrow right"></div>
+              <img src="./imgs/products/1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Slider -->
+
+    <!-- Start Products -->
+    <section id="products">
+      <div class="container">
+        <h2>CLOTHING COLLECTION</h2>
+        <div class="categories">
+          <div class="btns">
+            <button class="allBtn active">All</button>
+            <button class="menBtn">MEN</button>
+            <button class="womenBtn">WOMEN</button>
+            <button class="babyBtn">BABY</button>
+            <button class="accessoryBtn">ACCESSORIES</button>
+          </div>
+          <div class="products">
+            <div class="man product">
+              <img src="./imgs/products/1.jpg" alt="clothes" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+
+              <a onclick="addProduct('./imgs/products/1.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/2.jpg" alt="clothes" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/2.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/3.jpg" alt="clothes" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/3.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/4.jpg" alt="clothes" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/4.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/5.jpg" alt="clothes" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/5.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/6.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/6.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/7.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/7.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/8.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/8.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="man product">
+              <img src="./imgs/products/9.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/9.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/10.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/10.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/11.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/11.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/12.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/12.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/13.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/13.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/14.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/14.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/15.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/15.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/16.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/16.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/17.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/17.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="woman product">
+              <img src="./imgs/products/18.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/18.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="baby product">
+              <img src="./imgs/products/19.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/19.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="baby product">
+              <img src="./imgs/products/20.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/20.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="baby product">
+              <img src="./imgs/products/21.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/21.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="accessory product">
+              <img src="./imgs/products/22.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/22.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="accessory product">
+              <img src="./imgs/products/23.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/23.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+            <div class="accessory product">
+              <img src="./imgs/products/24.jpg" alt="" />
+              <h4>T-Shirt</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <a onclick="addProduct('./imgs/products/24.jpg')">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Products -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="about">
+          <div class="logo">
+            <h2>LCWAIKIKI</h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            odit amet quisquam dolorum, perferendis recusandae.
+          </p>
+        </div>
+
+        <div class="social">
+          <h3>Social Media</h3>
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>About US</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Egypt Cairo Badr City</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span> contact&#64;example.com </span>
+            </li>
+            <li><i class="fa-solid fa-phone"></i> <span>010101010010</span></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
